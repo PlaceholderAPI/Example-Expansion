@@ -45,6 +45,8 @@ public class ExampleExpansion extends PlaceholderExpansion {
 			return p.getDisplayName();
 		case "gamemode":
 			return p.getGameMode().name();
+		case "health":
+			return Double.toString(p.getHealth());
 		}
 		return null;
 	}
