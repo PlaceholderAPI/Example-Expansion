@@ -1,6 +1,6 @@
 # HuskHomes-Expansion
 
-An expansion of PlaceholderAPI for [HuskHomes](https://github.com/WiIIiam278/HuskHomes2).
+An expansion of PlaceholderAPI for [HuskHomes](https://github.com/WiIIiam278/HuskHomes2). Requires HuskHomes 2.3.1+
 
 * [eCloud link](https://api.extendedclip.com/expansions/huskhomes/)
 
