@@ -2,6 +2,8 @@
 
 An expansion of PlaceholderAPI for [HuskHomes](https://github.com/WiIIiam278/HuskHomes2).
 
+* [eCloud link](https://api.extendedclip.com/expansions/huskhomes/)
+
 ## Placeholders
 Placeholder | Details
 ------------ | ------------ 
