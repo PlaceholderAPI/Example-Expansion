@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.extendedclip.placeholderapi.expansions</groupId>
-    <artifactId>example-expansion</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>huskhomes-expansion</artifactId>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>Expansion-Example</name>
-    <description>This is an example expansion for PlaceholderAPI</description>
+    <name>HuskHomes-Expansion</name>
+    <description>Expansion of PlaceholderAPI for HuskHomes</description>
 
     <repositories>
         <repository>
@@ -24,26 +24,31 @@
             <id>clips-public-repo</id>
             <url>http://repo.extendedclip.com/content/repositories/public/</url>
         </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.12.2-R0.1-SNAPSHOT</version>
-            <scope>compile</scope>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>me.clip</groupId>
             <artifactId>placeholderapi</artifactId>
-            <version>2.9.1</version>
-            <scope>provided</scope>
+            <version>2.10.9</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>me.clip.deluxetags</groupId>
-            <artifactId>deluxetags</artifactId>
-            <version>1.7.1</version>
-            <scope>provided</scope>
+            <groupId>com.github.WiIIiam278</groupId>
+            <artifactId>HuskHomes2</artifactId>
+            <version>2.4</version>
+            <scope>system</scope>
+            <systemPath>C:/Users/William/IdeaProjects/HuskHomes2/target/HuskHomes-2.4.jar</systemPath>
         </dependency>
     </dependencies>
 
