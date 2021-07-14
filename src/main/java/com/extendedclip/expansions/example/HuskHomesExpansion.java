@@ -10,7 +10,6 @@ import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 
 public class HuskHomesExpansion extends PlaceholderExpansion {
     
-    private final String VERSION = getClass().getPackage().getImplementationVersion();
     private HuskHomes huskHomes;
 
     @Override
@@ -23,9 +22,10 @@ public class HuskHomesExpansion extends PlaceholderExpansion {
         return "William278";
     }
 
+    // This expansion version. Change in POM and here
     @Override
     public String getVersion() {
-        return VERSION;
+        return "1.0.2";
     }
 
     @Override
