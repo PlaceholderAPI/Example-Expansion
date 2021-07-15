@@ -1,16 +1,16 @@
 package com.extendedclip.expansions.example;
 
-import me.william278.huskhomes2.HuskHomes;
+import me.clip.placeholderapi.expansion.PlaceholderExpansion;
+import me.william278.huskhomes2.api.HuskHomesAPI;
 import me.william278.huskhomes2.teleport.points.Home;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 
-import me.clip.placeholderapi.expansion.PlaceholderExpansion;
+import java.util.StringJoiner;
 
 public class HuskHomesExpansion extends PlaceholderExpansion {
-    
-    private HuskHomes huskHomes;
 
     @Override
     public String getIdentifier() {
@@ -25,7 +25,7 @@ public class HuskHomesExpansion extends PlaceholderExpansion {
     // This expansion version. Change in POM and here
     @Override
     public String getVersion() {
-        return "1.0.2";
+        return "1.0.3";
     }
 
     @Override
@@ -40,7 +40,7 @@ public class HuskHomesExpansion extends PlaceholderExpansion {
 
     @Override
     public boolean register() {
-        huskHomes = (HuskHomes) Bukkit.getPluginManager().getPlugin(getRequiredPlugin());
+        Plugin huskHomes = Bukkit.getPluginManager().getPlugin(getRequiredPlugin());
         if (huskHomes != null) {
             return super.register();
         }
@@ -54,30 +54,30 @@ public class HuskHomesExpansion extends PlaceholderExpansion {
         Player player = offlinePlayer.getPlayer();
         switch (params) {
             case "homes_set":
-                return String.valueOf(huskHomes.getAPI().getHomeCount(player));
+                return String.valueOf(HuskHomesAPI.getInstance().getHomeCount(player));
             case "homes_max":
-                return String.valueOf(huskHomes.getAPI().getMaxSethomes(player));
+                return String.valueOf(HuskHomesAPI.getInstance().getMaxSethomes(player));
             case "homes_free":
-                return String.valueOf(huskHomes.getAPI().getFreeSethomes(player));
+                return String.valueOf(HuskHomesAPI.getInstance().getFreeSethomes(player));
             case "homes_set_list":
-                StringBuilder homeList = new StringBuilder();
-                for (Home h : huskHomes.getAPI().getHomes(player)) {
-                    homeList.append(h.getName()).append(", ");
+                StringJoiner homeList = new StringJoiner(", ");
+                for (Home h : HuskHomesAPI.getInstance().getHomes(player)) {
+                    homeList.add(h.getName());
                 }
                 return homeList.toString();
             case "homes_set_public":
                 int publicHomes = 0;
-                for (Home h : huskHomes.getAPI().getHomes(player)) {
+                for (Home h : HuskHomesAPI.getInstance().getHomes(player)) {
                     if (h.isPublic()) {
                         publicHomes++;
                     }
                 }
                 return String.valueOf(publicHomes);
             case "homes_set_public_list":
-                StringBuilder publicHomeList = new StringBuilder();
-                for (Home h : huskHomes.getAPI().getHomes(player)) {
+                StringJoiner publicHomeList = new StringJoiner(", ");
+                for (Home h : HuskHomesAPI.getInstance().getHomes(player)) {
                     if (h.isPublic()) {
-                        publicHomeList.append(h.getName()).append(", ");
+                        publicHomeList.add(h.getName());
                     }
                 }
                 return publicHomeList.toString();
