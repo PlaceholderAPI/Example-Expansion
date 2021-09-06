@@ -56,9 +56,9 @@ public class HuskHomesExpansion extends PlaceholderExpansion {
             case "homes_set":
                 return String.valueOf(HuskHomesAPI.getInstance().getHomeCount(player));
             case "homes_max":
-                return String.valueOf(HuskHomesAPI.getInstance().getMaxSethomes(player));
+                return String.valueOf(HuskHomesAPI.getInstance().getMaxSetHomes(player));
             case "homes_free":
-                return String.valueOf(HuskHomesAPI.getInstance().getFreeSethomes(player));
+                return String.valueOf(HuskHomesAPI.getInstance().getFreeSetHomes(player));
             case "homes_set_list":
                 StringJoiner homeList = new StringJoiner(", ");
                 for (Home h : HuskHomesAPI.getInstance().getHomes(player)) {
