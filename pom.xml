@@ -3,9 +3,9 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.extendedclip.placeholderapi.expansions</groupId>
+    <groupId>me.william278.huskhomes.expansion</groupId>
     <artifactId>huskhomes-expansion</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
 
     <name>HuskHomes-Expansion</name>
@@ -18,11 +18,11 @@
         </repository>
         <repository>
             <id>placeholderapi</id>
-            <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
         <repository>
             <id>clips-public-repo</id>
-            <url>http://repo.extendedclip.com/content/repositories/public/</url>
+            <url>https://repo.extendedclip.com/content/repositories/public/</url>
         </repository>
         <repository>
             <id>jitpack.io</id>

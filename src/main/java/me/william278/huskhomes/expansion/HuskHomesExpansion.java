@@ -1,4 +1,4 @@
-package com.extendedclip.expansions.example;
+package me.william278.huskhomes.expansion;
 
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import me.william278.huskhomes2.api.HuskHomesAPI;
@@ -7,29 +7,29 @@ import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.StringJoiner;
 
 public class HuskHomesExpansion extends PlaceholderExpansion {
 
     @Override
-    public String getIdentifier() {
+    public @NotNull String getIdentifier() {
         return "huskhomes";
     }
 
     @Override
-    public String getAuthor() {
+    public @NotNull String getAuthor() {
         return "William278";
     }
 
-    // This expansion version. Change in POM and here
     @Override
-    public String getVersion() {
+    public @NotNull String getVersion() {
         return "1.0.3";
     }
 
     @Override
-    public String getRequiredPlugin() {
+    public @NotNull String getRequiredPlugin() {
         return "HuskHomes";
     }
 
@@ -48,7 +48,7 @@ public class HuskHomesExpansion extends PlaceholderExpansion {
     }
 
     @Override
-    public String onRequest(OfflinePlayer offlinePlayer, String params) {
+    public String onRequest(OfflinePlayer offlinePlayer, @NotNull String params) {
         if (offlinePlayer == null || !offlinePlayer.isOnline()) { return "Player not online"; }
 
         Player player = offlinePlayer.getPlayer();
