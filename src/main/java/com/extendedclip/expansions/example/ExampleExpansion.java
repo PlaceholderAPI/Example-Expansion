@@ -34,13 +34,13 @@ public class ExampleExpansion extends PlaceholderExpansion {
     }
 
     /**
-     * Returns the version of the expansion as String.
+     * Returns the HARDCODED version of the expansion as String.
      *
-     * @return The VERSION String
+     * @return The HARDCODED VERSION String
      */
     @Override
     public String getVersion() {
-        return VERSION;
+        return "${project.version}";
     }
 
     /**
