@@ -13,3 +13,4 @@ Placeholder | Details
 `%huskhomes_homes_set_list%` | Comma separated list of the player's homes
 `%huskhomes_homes_set_public%` | Number of public homes the player has set
 `%huskhomes_homes_set_public_list%` | Comma separated list of the player's public homes
+`%huskhomes_ignore_tp%` | Whether the player is ignoring teleport requests
