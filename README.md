@@ -1,16 +1,6 @@
-# HuskHomes-Expansion
+# [![HuskHomes Banner](images/banner-graphic.png)](https://github.com/WiIIiam278/HuskHomes2)
+[![Support Discord](https://img.shields.io/discord/818135932103557162.svg?label=&logo=discord&logoColor=fff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/tVYhJfyDWG)
 
-An expansion of PlaceholderAPI for [HuskHomes](https://github.com/WiIIiam278/HuskHomes2). Requires HuskHomes 2.3.1+
+**HuskHomes Placeholders** is the PlaceholderAPI expansion for HuskHomes v3.x+.
 
-* [eCloud link](https://api.extendedclip.com/expansions/huskhomes/)
-
-## Placeholders
-Placeholder | Details
------------- | ------------ 
-`%huskhomes_homes_set%` | Number of homes that player has set
-`%huskhomes_homes_max%` | Maximum number of homes that player can set
-`%huskhomes_homes_free%` | Number of homes the player can set for free
-`%huskhomes_homes_set_list%` | Comma separated list of the player's homes
-`%huskhomes_homes_set_public%` | Number of public homes the player has set
-`%huskhomes_homes_set_public_list%` | Comma separated list of the player's public homes
-`%huskhomes_ignore_tp%` | Whether the player is ignoring teleport requests
+You can download the expansion from the [PlaceholderAPI eCloud](https://api.extendedclip.com/expansions/huskhomes/) using the following command: `/papi ecloud download HuskHomes`

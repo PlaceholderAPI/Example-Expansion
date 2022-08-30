@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'net.william278'
+version '2.0'
+
+sourceCompatibility = 16
+targetCompatibility = 16
+
+repositories {
+    mavenCentral()
+
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url 'https://repo.extendedclip.com/content/repositories/placeholderapi/' }
+    maven { url 'https://jitpack.io/' }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+    compileOnly 'net.william278:HuskHomes2:fde3736eb3'
+    compileOnly 'me.clip:placeholderapi:2.11.2'
+    compileOnly 'org.jetbrains:annotations:23.0.0'
+}
